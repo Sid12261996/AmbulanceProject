@@ -44,41 +44,30 @@ html {
   border-radius: 150px;
   overflow: hidden;
   border: 1px solid black;
-  animation-name: Anim;
-  animation-duration: 5s;
+  animation-name: Demo;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+
 
 }
-@@keyframes Anim {
-  0%{
-    transform: rotate(120px);
-    width: 400px;
-    height: 400px;
-    border-radius: 200px;
-  }
-  25%{
-    transform: rotate(320px);
-    width: 400px;
-    height: 400px;
-    border-radius: 200px;
-  }
-  50%{
-    transform: rotate(140px);
-    width: 400px;
-    height: 400px;
-    border-radius: 200px;
-  }
-  75%{
-    transform: rotate(10px);
-    width: 400px;
-    height: 400px;
-    border-radius: 200px;
-  }
-  100%{
-    transform: rotate(120px);
-    width: 400px;
-    height: 400px;
-    border-radius: 200px;
-  }
+@keyframes Demo {
+    0%{
+    transform: translate(50px,100px);
+    }
+    33%{
+      transform: translate(100px,100px);
+    }
+    66%{
+      transform: translate(100px,50px);
+    }
+    99%{
+    transform: translate(50px,100px);
+
+    }
+    100%{
+    transform: translate(50px,100px);
+
+    }
 }
 
 .navKeys {
