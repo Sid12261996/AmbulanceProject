@@ -23,6 +23,7 @@
   </div>
   	<form action="Register.php" method="post">
   		<div class="modal-body text-center">
+
   			<table align="center" cellpadding="8px">
             <tr>
               <td>First Name:</td>
@@ -72,13 +73,18 @@
   			<img src="Img/Back.jpg" class="Sky">
   			<div class="carousel-caption">
   			<img src="Img/Plus.png" class="Logo" alt="Plus-Logo">
+
   			</div>
   		</div>
   	</div>
-
+  <img src="Img/logo.png" alt="" id="logoAnimation">
 <!--Form-->
 <div class="container-fluid col-md-12 text-center padding">
+
+
   <form action="" method="">
+
+
     <table align="center" cellpadding="3px">
       <tr>
         <td>Phone No. / Email ID</td>
@@ -97,6 +103,8 @@
   <h6>Or</h6>
   <button type="button" class="btn curve"><a href="Inside.php">Emergency Call</a></button>
 </div>
+<div class="animation">
 
+</div>
 </body>
 </html>
