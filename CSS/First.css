@@ -2,7 +2,7 @@
 
 .Sky {
   height: 400px;
-  width: 100%;
+  width: 150%;
 }
 
 .Logo {
@@ -19,6 +19,7 @@
      height: 100%;
      background-color: #ff6666; /* For browsers that do not support gradients */
      background-image: linear-gradient(white, #ff6666); /* Standard syntax (must be last) */
+background-size: cover;
  }
 
 /*Form Buttons*/
@@ -48,33 +49,21 @@
   color: white;
   text-decoration: none;
 }
-/* .animation{
 
-  height: 100px;
-  background-color: rgb(30, 161, 217);
-} */
 #logoAnimation{
   width: 100px;
   height: 100px;
 
-/* margin-right: 0px; */
+
   animation-name: Demo;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 @keyframes Demo {
  0%{
-  transform: translateX(1600px);
+  transform: translateX(840px);
 }
-  /* 25% {
-    transform:translateX(1200px);
-  }  */
-  /* 50%{
-    transform:translateX(0px); */
-  /* }
-   75% {
-      transform:translateX(600px);
-  } */
+
   100% {
       transform:translateX(0px);
   }
