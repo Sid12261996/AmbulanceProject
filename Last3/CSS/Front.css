@@ -1,0 +1,24 @@
+.cards img {
+  align-items: center;
+  height:400px;
+  width: 400px;
+  border-radius: 180px;
+}
+ .padding {
+   padding: 30px;
+ }
+
+ #grad1 {
+     height: 100%;
+     background-color: red; /* For browsers that do not support gradients */
+     background-image: linear-gradient(red, white); /* Standard syntax (must be last) */
+ }
+
+.curve {
+  border-radius: 10px;
+}
+
+.curve:hover {
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+html,body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#grad1 {
+  background-color: red;
+  background-image: linear-gradient(#4d0000, white);
+  background-repeat: no-repeat;
+}
+#myMap {
+  height: 400px;
+  width: 100%;
+}
+.navbar-header {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-brand {
+  font-style: italic;
+  font-size: 40px;
+}
+
+.navbar {
+  color: white;
+}
+
+.navbar button {
+  border-radius: 80px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Remove below part later after adding Goole API Part*/
+
+.frame iframe {
+  width: 100%;
+  height: 540px;
+}
+
+.frame {
+  padding-top: 15px;
+}
