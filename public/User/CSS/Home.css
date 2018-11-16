@@ -1,0 +1,164 @@
+html {
+  background: linear-gradient(180deg, rgb(244, 105, 101), white);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Textbox {
+  width: 300px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid black;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+#submitbtn {
+  border-radius: 25px;
+  margin-left: 180px;
+  padding: 15 50 15 50;
+  background-color: green;
+  color: white;
+  font-size: 24px;
+  width: 200px;
+  height: 50px;
+  margin-top: 70px;
+  box-shadow: 5px 5px 8px #333;
+}
+
+.formclass {
+  margin-left: 450px;
+  margin-top: 150px;
+  font-size: 32px;
+  display: block;
+  color: rgb(61, 58, 60);
+  font-family: fantasy;
+
+
+}
+#Img{
+  float: left;
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  overflow: hidden;
+  border: 1px solid black;
+  animation-name: Anim;
+  animation-duration: 5s;
+
+}
+@@keyframes Anim {
+  0%{
+    transform: rotate(120px);
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+  }
+  25%{
+    transform: rotate(320px);
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+  }
+  50%{
+    transform: rotate(140px);
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+  }
+  75%{
+    transform: rotate(10px);
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+  }
+  100%{
+    transform: rotate(120px);
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+  }
+}
+
+.navKeys {
+  padding: 0px 10px;
+  background: linear-gradient(0deg, rgb(244, 105, 101), white);
+  margin-top: 10px;
+  font-size: 32px;
+  text-decoration: none;
+  border-radius: 7px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+#navTable {
+  margin-left: 700px;
+  display: block;
+}
+
+.navKeys:hover {
+  background: none;
+  background-color: rgb(244, 105, 101);
+  color: white;
+  box-shadow: none;
+  border: 1px solid white;
+}
+
+.paragraph {
+  height: 300px;
+  width: 600px;
+  float: right;
+  margin-top: 50px;
+  padding: 10px;
+  text-align: justify;
+  margin-right: 100px;
+  font-size: 32px;
+  border: 2px solid rgb(241, 139, 139);
+  background-color: rgb(244, 179, 179);
+  overflow-y: hidden;
+}
+
+#EmergencyBtn {
+  width: 350px;
+  height: 70px;
+  border-radius: 25px;
+  color: white;
+  background-color: red;
+  margin-left: 750px;
+  margin-top: 50px;
+  font-size: 38px;
+  padding: 10px;
+  box-shadow: 5px 5px 8px #333;
+}
+#EmergencyBtn:hover{
+
+}
+a:link {
+  text-decoration: none;
+  box-shadow: 2px 2px 5px #333;
+  color: black;
+}
+
+.Ambulancetype {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  overflow: hidden;
+  margin-left: 50px;
+  border: 1px solid black;
+}
+
+.logo {
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  overflow: hidden;
+  margin-left: 50px;
+  border: 1px solid black;
+}
+
+.amTypediv {
+  margin-left: 300px;
+  margin-top: 50px;
+}
