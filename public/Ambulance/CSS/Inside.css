@@ -46,3 +46,6 @@ html,body{
 .frame {
   padding-top: 15px;
 }
+#to_place{
+  visibility: hidden;
+}
