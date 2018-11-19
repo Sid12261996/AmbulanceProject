@@ -84,3 +84,6 @@ padding: 0px 5px;
 .frame {
   padding-top: 15px;
 }
+#to_place{
+  visibility: hidden;
+}

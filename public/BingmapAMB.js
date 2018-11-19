@@ -29,7 +29,7 @@ function GetMap() {
         map.entities.push(pin);
 
         //Center the map on the user's location.
-        map.setView({ center: loc, zoom: 15 });
+        map.setView({ center: loc, zoom: 19 });
     });
 
 }

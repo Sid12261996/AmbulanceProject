@@ -56,7 +56,7 @@ function GetDirection(){
 
                 //Calculate directions.
                 directionsManager.calculateDirections();
-                map.setView({center: Waypoint0, zoom: 18});
+                map.setView({center: Waypoint0, zoom: 20});
 
 
               });

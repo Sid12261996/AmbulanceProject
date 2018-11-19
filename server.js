@@ -6,14 +6,14 @@ var io = require('socket.io')(server);
 var port = process.env.PORT || 8080;
     dummyLoc={latitude:28.5246,longitude: 77.2066};//lat & lon of SAKET to set as default
 
-app.use(express.static(path.join(__dirname + '/public')));
-app.use(express.static(path.join(__dirname + '/public')));
-app.use(express.static(path.join(__dirname + '/public')));
+app.use(express.static(path.join(__dirname + '/public/')));
+app.use(express.static(path.join(__dirname + '/public/')));
+app.use(express.static(path.join(__dirname + '/public/')));
 server.listen(port, () => {
   console.log('Server listening at port %d', port);
 });
 
-
+console.log(__dirname);
 var users = {};
 var amb = {};
 
