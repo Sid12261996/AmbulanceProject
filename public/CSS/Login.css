@@ -1,0 +1,19 @@
+.padding {
+  padding:20px;
+}
+
+#grad {
+  background-color: #ffc6a8;
+}
+
+.welcome-padding {
+  padding-left: 20px;
+}
+
+.alsa, .blsa, .pta {
+  padding-top: 60px;
+}
+
+.alsa-padding:hover, .blsa-padding:hover, .pta-padding:hover {
+  background-color: white;
+}

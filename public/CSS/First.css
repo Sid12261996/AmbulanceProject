@@ -1,0 +1,70 @@
+/*Carousel*/
+
+.Sky {
+  height: 400px;
+  width: 150%;
+}
+
+.Logo {
+  padding-bottom: 50px;
+  box-shadow: 0px 30px 40px rgba(0,0,0,.9);
+}
+
+ .padding {
+   padding: 0px;
+ }
+
+/*Background*/
+ #grad1 {
+     height: 100%;
+     background-color: #ff6666; /* For browsers that do not support gradients */
+     background-image: linear-gradient(#ff8484,white); /* Standard syntax (must be last) */
+background-size: cover;
+ }
+
+/*Form Buttons*/
+.curve {
+  border-radius: 10px;
+}
+
+.curve:hover {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #cc0000;
+}
+
+.btn:hover {
+  background-color: #4d0000;
+}
+
+
+.btn a {
+  color: white;
+}
+
+.btn a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#logoAnimation{
+  width: 100px;
+  height: 100px;
+
+
+  animation-name: Demo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes Demo {
+ 0%{
+  transform: translateX(840px);
+}
+
+  100% {
+      transform:translateX(0px);
+  }
+}

@@ -1,0 +1,292 @@
+
+div
+{
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul
+{
+	list-style: none;
+	margin-bottom: 0px;
+}
+
+p a
+{
+	display: inline;
+	position: relative;
+	border-bottom: solid 1px #ffa07f;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+p:last-of-type
+{
+	margin-bottom: 0;
+}
+a
+{
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+a, a:hover, a:visited, a:active, a:link
+{
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+p a:active
+{
+	position: relative;
+	color: #FF6347;
+}
+p a:hover
+{
+	color: #FFFFFF;
+	background: #ffa07f;
+}
+p a:hover::after
+{
+	opacity: 0.2;
+}
+::selection
+{
+	background: rgba(255,255,255,0.07);
+}
+p::selection
+{
+	
+}
+button:active
+{
+	outline: none;
+}
+.form-control
+{
+	color: #db5246;
+}
+section
+{
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.float_left
+{
+	float: left;
+}
+.float_right
+{
+	float: right;
+}
+
+.fill_height
+{
+	height: 100%;
+}
+.super_container
+{
+	width: 100%;
+	overflow: hidden;
+}
+
+
+/* Header */
+
+.header
+{
+	
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color:#9B59B6;
+	
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+
+.header_content
+{
+	width: 100%;
+	height: 101px;
+	padding-left: 51px;
+	padding-right: 52px;
+	
+}
+.header.scrolled .header_content
+{
+	height: 70px;
+}
+.logo
+{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 51px;
+}
+.logo a
+{
+	font-family: 'Futura', sans-serif;
+	font-size: 30px;
+	color: red;
+}
+.logo a:hover{
+	text-decoration:none;
+	color:red;
+	font-size:32px;
+}
+.log_reg
+{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 52px;
+}
+
+.main_nav ul li:not(:last-child)
+{
+	margin-right: 26px;
+}
+.main_nav ul li
+{
+	position: relative;
+}
+.main_nav ul li a
+{
+	position: relative;
+	font-size: 20px;
+	color:#666363;
+	padding-left: 26px;
+	padding-right: 23px;
+	
+}
+.main_nav ul li a:hover{
+	text-decoration:none;
+	color:red;
+	
+}
+.hamburger
+{
+	display: none;
+	width: 50px;
+	height: 24px;
+	cursor: pointer;
+	padding: 5px;
+	right: -5px;
+}
+
+
+/*footer*/
+
+
+.footer
+{
+	
+	padding-left: 50px;
+	padding-right: 51px;
+}
+.newsletter_container
+{
+	width: 604px;
+	padding-top: 103px;
+}
+
+.newsletter_form
+{
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-top: 30px;
+}
+.newsletter_input
+{
+	width: 100%;
+	height: 50px;
+	background-color:F1F1F1;
+	border: none;
+	outline: none;
+	padding-left: 23px;
+}
+.newsletter_input::-webkit-input-placeholder
+{
+	font-size: 16px !important;
+	font-style: italic;
+	color: grey!important;
+}
+.newsletter_button
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 139px;
+	height: 50px;
+	background: #de4f32;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+.footer_lists
+{
+	width: 575px;
+	padding-top: 83px;
+	padding-bottom: 5px;
+}
+.footer_list
+{
+	width: calc(100% / 3);
+}
+.footer_list_title
+{
+	font-size: 28px;
+}
+.footer_list ul
+{
+	margin-top: 23px;
+}
+.footer_list ul li:not(:last-of-type)
+{
+	margin-bottom: 9px;
+}
+.footer_list ul li a
+{
+	font-size: 20px;
+	color: #6d6d6d;
+}
+.footer_list ul li a:hover
+{
+	color: red;
+}
+.copyright_bar
+{
+	width: 100%;
+	height: 67px;
+	
+}
+.copyright_bar span
+{
+	font-size: 18px;
+	color: #6d6d6d;
+	line-height: 67px;
+}

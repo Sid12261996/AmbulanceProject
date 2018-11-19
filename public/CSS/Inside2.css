@@ -1,0 +1,86 @@
+html,body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/*Navbar*/
+
+.navbar {
+  padding: 20px 5px;
+
+}
+
+.navbar-nav li {
+  padding: 0px 10px;
+  margin: 4px 5px;
+  border-bottom: 1px solid red;
+}
+
+.navlogo {
+font-size: 40px;
+border: 5px solid red;
+padding: 0px 5px;
+}
+
+/*Footer*/
+.footer {
+  padding: 20px;
+  padding-top: 30px;
+  background-color: #F8F9FA;
+  margin-top: 30px;
+}
+
+.hr {
+  border-bottom:1px solid red;
+  margin: 0px 80px;
+}
+
+.hr2 {
+  border-bottom:1px solid red;
+}
+
+.newsletter_title, .footer_list_title {
+  padding-bottom: 20px;
+}
+
+.red {
+  color:red;
+}
+
+#myMap {
+  height: 400px;
+  width: 100%;
+}
+
+.navbar-header {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-brand {
+  font-style: italic;
+  font-size: 40px;
+  color:grey;
+}
+
+.navbar button {
+  border-radius: 80px;
+
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Remove below part later after adding Goole API Part*/
+
+.frame iframe {
+  width: 100%;
+  height: 540px;
+}
+
+.frame {
+  padding-top: 15px;
+}

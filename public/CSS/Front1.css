@@ -1,0 +1,126 @@
+/*Navbar*/
+.fbody{
+	background-image:url(../Img/Group.png);
+	background-size:100%;
+	
+}
+.joinbody{
+	background-image:url(../Img/bhand.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	
+}
+.conbody{
+	background-image:url(../Img/call.jpg);
+	background-size:100%;
+	
+	background-repeat:no-repeat;
+}
+.aboutbody{
+	background-image:url(../Img/about.jpg);
+	background-size:100%;
+	
+}
+
+.navbar {
+  padding: 20px 5px;
+
+}
+
+.navbar-nav li {
+  padding: 0px 10px;
+  margin: 4px 5px;
+  border-bottom: 1px solid red;
+}
+
+.navlogo {
+font-size: 40px;
+border: 5px solid red;
+padding: 0px 5px;
+}
+
+/*Images of Whyus*/
+
+.avatar {
+  border-radius: 20px;
+}
+
+
+/*Form Buttons*/
+.curve {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.curve:hover {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #cc0000;
+}
+
+.btn:hover {
+  background-color: #4d0000;
+}
+
+
+.btn a {
+  color: white;
+}
+
+.btn a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/*Footer*/
+.footer {
+  padding: 20px;
+  padding-top: 30px;
+  background-color: #F8F9FA;
+  margin-top: 30px;
+}
+
+.hr {
+  border-bottom:1px solid red;
+  margin: 0px 80px;
+}
+
+.hr2 {
+  border-bottom:1px solid red;
+}
+
+.newsletter_title, .footer_list_title {
+  padding-bottom: 20px;
+}
+
+.red {
+  color:red;
+}
+
+/*Body*/
+.faq {
+  padding-top: 20px;
+}
+
+#logoAnimation{
+  width: 100px;
+  height: 100px;
+
+
+  animation-name: Demo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes Demo {
+ 0%{
+  transform: translateX(840px);
+}
+
+  100% {
+      transform:translateX(0px);
+  }
+}

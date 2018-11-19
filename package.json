@@ -1,0 +1,27 @@
+{
+  "name": "ambulance",
+  "version": "1.0.0",
+  "description": "To make an application to connect ambulance drivers and patients",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sid12261996/AmbulanceProject.git"
+  },
+  "keywords": [
+    "amb"
+  ],
+  "author": "sid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sid12261996/AmbulanceProject/issues"
+  },
+  "homepage": "https://github.com/Sid12261996/AmbulanceProject#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.1.1"
+  }
+}
