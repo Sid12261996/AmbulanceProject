@@ -33,9 +33,10 @@ io.on('connection', function(socket) {
 //connecting & sharing location of user
   socket.on('getUserLoc', function(data) {
     console.log('Hey ');
-    console.log('The lat&lon are ' + data.latitude + ' and ' + data.longitude);
-    userLoc=data;
-    console.log(distance);
+  console.log('The lat&lon are ' + data.start + ' and ' + data.end);
+    io.emit('Give User loc to Amb',data);
+
+
   });
 
 
@@ -47,8 +48,8 @@ io.on('connection', function(socket) {
 //connecting & sharing location of Ambulance
 socket.on('getAmbLoc', function(data) {
   console.log('Hey ');
-  console.log('The lat&lon are ' + data.latitude + ' and ' + data.longitude);
-
+  console.log('The lat&lon are ' + data.start + ' and ' + data.end);
+io.emit('Give Amb loc to user',data);
   ambLoc=data;
   });
 });

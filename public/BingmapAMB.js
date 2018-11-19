@@ -46,8 +46,7 @@ function GetDirection(){
                 //Create an instance of the directions manager.
                 searchManager = new Microsoft.Maps.Search.SearchManager(map);
                 directionsManager = new Microsoft.Maps.Directions.DirectionsManager(map);
-                 startaddr = JSON.stringify(document.getElementById('from_place').value);
-                 endaddr = JSON.stringify(document.getElementById('to_place').value);
+
 
                 //Create waypoints to route between.
                  Waypoint0 = new Microsoft.Maps.Directions.Waypoint({ address: startaddr });
@@ -76,17 +75,26 @@ if(localLocation==null){
 //socket part
   var socket= io();
   function shareLoc() {
-    console.log(localLocation);
+      var socket= io();
+
 
 
     data = {start:JSON.stringify(document.getElementById('from_place').value),
-                 end: JSON.stringify(document.getElementById('to_place').value)};
+                 end: 'hauzkhas'};
                  // UserLoc = geocodeQuery(startaddr);
                  // console.log(UserLoc);
 
-    socket.emit('getAmbLoc', localLocation);
-    socket.on('TheUsr',(dataVar)=>{
+    socket.emit('getAmbLoc', data);
 
+    };
 
-    });
-  };
+function direct() {
+  var socket= io();
+  socket.on('Give User loc to Amb',function(Ambloc){
+    console.log(Ambloc);
+
+  startaddr = JSON.stringify(document.getElementById('from_place').value);
+      endaddr = Ambloc.start;
+      GetDirection();
+});
+}

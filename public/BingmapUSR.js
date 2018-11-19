@@ -31,6 +31,8 @@ function GetMap() {
 
 }
 
+
+
 function GetDirection(){
   map = new Microsoft.Maps.Map('#myMap', {
       credentials: 'ArA1Ia_YMBny3C67AvN0bx4K3ZnJ7wB4Fr4LF1H8jPxqHbnx1RRFsfeUoHMN9Wcq'
@@ -40,8 +42,6 @@ function GetDirection(){
                 //Create an instance of the directions manager.
                 searchManager = new Microsoft.Maps.Search.SearchManager(map);
                 directionsManager = new Microsoft.Maps.Directions.DirectionsManager(map);
-                 startaddr = JSON.stringify(document.getElementById('from_place').value);
-                 endaddr = JSON.stringify(document.getElementById('to_place').value);
 
                 //Create waypoints to route between.
                  Waypoint0 = new Microsoft.Maps.Directions.Waypoint({ address: startaddr });
@@ -69,15 +69,24 @@ function GetDirection(){
 //socket part
   var socket= io();
   function shareLoc() {
-
-    // data = {start:JSON.stringify(document.getElementById('from_place').value),
-    //              end: JSON.stringify(document.getElementById('to_place').value)};
+  var socket= io();
+    data = {start:JSON.stringify(document.getElementById('from_place').value),
+                 end: 'hauzkhas'};
                  // UserLoc = geocodeQuery(startaddr);
                  // console.log(UserLoc);
 
-    socket.emit('getUserLoc', localLocation);
-    socket.on('distance',(dataVar)=>{
+    socket.emit('getUserLoc', data);
 
-console.log('the distance is '+dataVar);
-    });
+
   };
+
+  function direct() {
+    var socket= io();
+    socket.on('Give User loc to Amb',function(Ambloc){
+      console.log(Ambloc);
+
+    startaddr = JSON.stringify(document.getElementById('from_place').value);
+        endaddr = Ambloc.start;
+        GetDirection();
+  });
+}
