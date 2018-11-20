@@ -69,7 +69,7 @@ function GetDirection(){
 //socket part
   var socket= io();
   function shareLoc() {
-  var socket= io();
+
     data = {start:JSON.stringify(document.getElementById('from_place').value),
                  end: 'hauzkhas'};
                  // UserLoc = geocodeQuery(startaddr);
@@ -82,8 +82,9 @@ function GetDirection(){
 
   function direct() {
     var socket= io();
-    socket.on('Give User loc to Amb',function(Ambloc){
-      console.log(Ambloc);
+    socket.on('GiveAmbloctouser',function(Ambloc){
+      console.log('The AMbulance location  is'+Ambloc);
+
 
     startaddr = JSON.stringify(document.getElementById('from_place').value);
         endaddr = Ambloc.start;

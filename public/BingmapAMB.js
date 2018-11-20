@@ -90,11 +90,39 @@ if(localLocation==null){
 
 function direct() {
   var socket= io();
-  socket.on('Give User loc to Amb',function(Ambloc){
-    console.log(Ambloc);
+  socket.on('GiveUserloctoAmb',function(Ambloc){
+    console.log('The AMbulance location  is'+Ambloc);
 
   startaddr = JSON.stringify(document.getElementById('from_place').value);
       endaddr = Ambloc.start;
-      GetDirection();
+      map = new Microsoft.Maps.Map('#myMap', {
+          credentials: 'ArA1Ia_YMBny3C67AvN0bx4K3ZnJ7wB4Fr4LF1H8jPxqHbnx1RRFsfeUoHMN9Wcq'
+      });
+                //Load the directions module.
+                Microsoft.Maps.loadModule('Microsoft.Maps.Directions', function () {
+                    //Create an instance of the directions manager.
+                    searchManager = new Microsoft.Maps.Search.SearchManager(map);
+                    directionsManager = new Microsoft.Maps.Directions.DirectionsManager(map);
+
+
+                    //Create waypoints to route between.
+                     Waypoint0 = new Microsoft.Maps.Directions.Waypoint({ address: startaddr });
+                    directionsManager.addWaypoint(Waypoint0);
+
+                     Waypoint1 = new Microsoft.Maps.Directions.Waypoint({ address: endaddr});
+                    directionsManager.addWaypoint(Waypoint1);
+
+                    //Specify the element in which the itinerary will be rendered.
+                  directionsManager.setRenderOptions({ itineraryContainer: '#directionsItinerary' });
+
+
+                    //Calculate directions.
+                    directionsManager.calculateDirections();
+                    map.setView({center: Waypoint0, zoom: 18});
+
+
+                  });
+
+
 });
 }

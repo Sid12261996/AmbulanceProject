@@ -87,3 +87,6 @@ padding: 0px 5px;
 #to_place{
   visibility: hidden;
 }
+#direct{
+  display: none;
+}
