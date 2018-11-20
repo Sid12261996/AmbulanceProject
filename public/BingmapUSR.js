@@ -65,7 +65,19 @@ function GetDirection(){
 
   // if(localLocation==null){
     localLocation = dummyLoc;
+
 // }
+
+$(document).ready(function() {
+  $('#share').click(function() {
+    $('#direct').show(1000);
+  });
+
+        $('#from_place').click(function() {
+            $('#direct').hide();
+        });
+});
+
 //socket part
   var socket= io();
   function shareLoc() {

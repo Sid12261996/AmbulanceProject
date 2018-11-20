@@ -4,8 +4,15 @@ var startaddr,endaddr,Waypoint0,Waypoint1, data;
 var UserLoc=[],
     dummyLoc={latitude:28.5246,longitude: 77.2066};//lat & lon of SAKET to set as default
 
-var $btn= $('btn');
-$btn.hide();
+    $(document).ready(function() {
+      $('#share').click(function() {
+        $('#direct').show(1000);
+      });
+
+      $('#from_place').click(function() {
+          $('#direct').hide();
+      });
+    });
 
 
 
